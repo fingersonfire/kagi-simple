@@ -18,26 +18,39 @@ border-bottom: none; var(--result-item-title-border);
   border-bottom: none; var(--result-item-title-border);
 }
 
+/* Hide the dog on the search page */
 .doggo_sit_a {
   display: none;
 }
 
+/* Hide the quick search button on mobile */
 .quick-search-btn {
   display: none;
 }
 
+/* Move lens to the end of the nav menu */
+._0_lenses {
+  order: 1;
+}
+
+/* Move the more dropdown to the end on mobile */
 .serp_nav_end {
   order: 2;
 }
 
-.search-result, .sri-group {
-  border-bottom: 3px solid var(--m_sri_gap_color);
+/* Changes to the mobile search results dividers */
+@media only screen and (max-width: 500px) {
+  .search-result, .sri-group {
+    border-bottom: 2px solid var(--m_sri_gap_color);
+  }
+
+  .inline-content+.search-result, .inline-content+.sri-group {
+    border-bottom: 2px solid var(--m_sri_gap_color);
+    border-top: 3px solid var(--m_sri_gap_color);
+  }
 }
 
-.inline-content+.search-result, .inline-content+.sri-group {
-  border-top: 3px solid var(--m_sri_gap_color);
-}
-
+/* Minor tweaks to the interesting finds section */
 .list-widget .widgetContent .widgetItemTitle {
   border-bottom: 0;
   font-weight: bold;
@@ -47,12 +60,14 @@ border-bottom: none; var(--result-item-title-border);
   border: 0;
 }
 
-.landing_cat_buttons {
-  justify-content: center;
-}
-
+/* Clamp video titles at 2 lines */
 .widgetItem .videoResultTitle {
   -webkit-line-clamp: 2;
+}
+
+/* Fix alignment and sizing of category buttons on mobile search page */
+.landing_cat_buttons {
+  justify-content: center;
 }
 
 .landing-category-select .landing_cat_buttons>button i {
@@ -63,8 +78,4 @@ border-bottom: none; var(--result-item-title-border);
 .landing-category-select .landing_cat_buttons>button {
   width: 120px;
   align-items: center;
-}
-
-._0_lenses {
-  order: 1;
 }
