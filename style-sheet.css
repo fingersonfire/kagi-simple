@@ -28,11 +28,6 @@ border-bottom: none; var(--result-item-title-border);
   display: none;
 }
 
-/* Move lens to the end of the nav menu */
-._0_lenses {
-  order: 1;
-}
-
 /* Move the more dropdown to the end on mobile */
 .serp_nav_end {
   order: 2;
