@@ -60,11 +60,6 @@ border-bottom: none; var(--result-item-title-border);
   -webkit-line-clamp: 2;
 }
 
-/* Fix alignment and sizing of category buttons on mobile search page */
-.landing_cat_buttons {
-  justify-content: center;
-}
-
 .landing-category-select .landing_cat_buttons>button i {
   height: auto;
   width: auto;
